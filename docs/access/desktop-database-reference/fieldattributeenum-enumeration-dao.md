@@ -11,8 +11,17 @@ localization_priority: Normal
 
 # FieldAttributeEnum enumeration (DAO)
 
+**Applies to**: Access 2013, Office 2013, Access 2016, Office 2016, Office 365
 
-**Applies to**: Access 2013, Office 2013
+Used with the **Attributes** property to determine attributes of a **Field** object.
 
-TBD
+|Name|Value|Description|
+|:-----|:-----|:-----|
+dbDescending|1|sort in descending (ZA) order, otherwise use ascending (AZ) order|
+dbFixedField|1|The field size is fixed (default for Numeric fields).|
+dbVariableField|2|The field size is variable (Text fields only).|
+dbAutoIncrField|16|The field value for new records is automatically incremented to a unique Long integer that can't be changed (for Microsoft Access database engine database tables).|
+dbUpdatableField|32|The field value can be changed.|
+dbSystemField|8192|replication information; can't delete but can create a new table without it and append records.
+dbHyperlinkField|32768|The field contains hyperlink information (Long Text fields only).
 
